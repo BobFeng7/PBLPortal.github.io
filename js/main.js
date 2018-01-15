@@ -46,35 +46,43 @@
 			var temp = $("<ul/>").addClass(slotclass).appendTo(slotobject);
 			var ul = $("ul." + slotclass);
 			$.each(this, function() { // loops through each person in each time slot
-				console.log(this);
 				var li = $("<li/>").appendTo(ul);
 	    		var a = $("<a/>").text(this).appendTo(li);
 			});
 		});
 	});
+	console.log("Succcessfuly loaded JSON file");
 
 
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~ Hover Animation ~~~~~~~~~~~~~~~~~~~~~~~~//
 	"use strict";
 	$('.column100').on('mouseover',function(){
 		// this grabs the table to find the appropriate style to use
-		var table1 = $(this).parent().parent().parent();
-		var table2 = $(this).parent().parent();
-		var verTable = $(table1).data('vertable')+"";
-		var column = $(this).data('column') + ""; 
+		var width = $(window).width();
+		console.log("window width is:" + width);
+		if (width > 760) {
+			console.log("entered if statement");
+			var table1 = $(this).parent().parent().parent();
+			var table2 = $(this).parent().parent();
+			var verTable = $(table1).data('vertable')+"";
+			var column = $(this).data('column') + ""; 
 
-		$(table2).find("."+column).addClass('hov-column-'+ verTable);
-		$(table1).find(".row100.head ."+column).addClass('hov-column-head-'+ verTable);
+			$(table2).find("."+column).addClass('hov-column-'+ verTable);
+			$(table1).find(".row100.head ."+column).addClass('hov-column-head-'+ verTable);
+		}
 	});
 
 	$('.column100').on('mouseout',function(){
-		var table1 = $(this).parent().parent().parent();
-		var table2 = $(this).parent().parent();
-		var verTable = $(table1).data('vertable')+"";
-		var column = $(this).data('column') + ""; 
+		var width = $(window).width();
+		if (width > 760) {
+			var table1 = $(this).parent().parent().parent();
+			var table2 = $(this).parent().parent();
+			var verTable = $(table1).data('vertable')+"";
+			var column = $(this).data('column') + ""; 
 
-		$(table2).find("."+column).removeClass('hov-column-'+ verTable);
-		$(table1).find(".row100.head ."+column).removeClass('hov-column-head-'+ verTable);
+			$(table2).find("."+column).removeClass('hov-column-'+ verTable);
+			$(table1).find(".row100.head ."+column).removeClass('hov-column-head-'+ verTable);
+		}
 	});
     
 

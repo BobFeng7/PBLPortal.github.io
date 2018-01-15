@@ -191,7 +191,7 @@ th, td {
 }
 
 .table100.ver1 .hov-column-head-ver1 {
-  background-color: #484848 !important;
+  background-color: #484848;
 }
 
 .table100.ver1 .row100 td:hover {
@@ -244,5 +244,24 @@ th, td {
   .wrap-table100 {
     width: 100%;
     padding-top: 0%;
+  }
+
+  .table100.ver1 .row100:hover {
+    background-color: #eee;
+    transition-duration: 10000s;
+  }
+
+  .table100.ver1 .hov-column-ver1 {
+    background-color: inherit;
+  }
+
+  .table100.ver1 .hov-column-head-ver1 {
+    background-color: inherit;
+  }
+
+  .table100.ver1 .row100 td:hover {
+    background-color: inherit;
+    color: black;
+    transition-duration: 100000s;
   }
 }
