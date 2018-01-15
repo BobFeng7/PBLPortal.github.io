@@ -28,12 +28,6 @@ body, html {
   overflow: hidden;
 }
 
-@media screen and (max-width: 760px) {
-  body, html {
-    overflow: scroll;
-  }
-}
-
 /* ------------------------------------ */
 a {
 	margin: 0px;
@@ -208,11 +202,14 @@ th, td {
 /*[ Ver1 ]*/
 
 @media screen and (max-width: 760px) {
+  body, html {
+    overflow: scroll;
+  }
+
   .title {
     padding-top: 5%;
     padding-bottom: 5%;
     font-size: 35px;
-    
   }
 
   tr:nth-of-type(odd) { 
@@ -236,7 +233,7 @@ th, td {
   }
 
   .column100 {
-    min-width: 100px;
+    min-width: 150px;
   }
 
   .table100.ver1 {
