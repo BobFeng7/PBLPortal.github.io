@@ -2509,6 +2509,17 @@
   /* Hack to improve aliasing on mobile/tablet devices */
 }
 
+@media screen and (max-width: 760px) {
+  .hvr-box-shadow-inset {
+    transition-duration: 1000s;
+  }
+
+  .hvr-box-shadow-inset:hover, .hvr-box-shadow-inset:focus, .hvr-box-shadow-inset:active {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.6), 0 0 1px transparent;
+    background-color: #d1d1d1;
+  }
+}
+
 /* Float Shadow */
 .hvr-float-shadow {
   display: inline-block;
