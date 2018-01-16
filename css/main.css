@@ -95,9 +95,9 @@ iframe {
 .setup {
   background-color: #d1d1d1;
   font-family: Montserrat-Medium;
-  margin: -0.1% 25% 1% 10%;
+  margin: -0.1% 30% 1% 10%;
   padding: 0.2% 10% 10% 100%;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .inner_setup {
@@ -105,6 +105,7 @@ iframe {
   border: solid;
   border-color: black;
   color: black;
+  min-width: 150%;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header Stuff ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -219,6 +220,19 @@ th, td {
     padding-bottom: 2%;
     margin-right: 10%;
     font-size: 30px;
+  }
+
+  .setup {
+    background-color: #d1d1d1;
+    font-family: Montserrat-Medium;
+    margin: 1% 120% 1% 10%;
+    padding: 0.2% 10% 10% 100%;
+    font-size: 12px;
+    min-width: 0%;
+  }
+
+  .inner_setup {
+
   }
 
   tr:nth-of-type(odd) { 

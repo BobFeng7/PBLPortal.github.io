@@ -2487,6 +2487,7 @@
 }
 .hvr-box-shadow-outset:hover, .hvr-box-shadow-outset:focus, .hvr-box-shadow-outset:active {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  color: black;
 }
 
 /* Box Shadow Inset */
