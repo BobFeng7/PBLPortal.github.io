@@ -217,10 +217,11 @@ th, td {
   }
 
   .title {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-right: 10%;
-    font-size: 33px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-right: 5%;
+    font-weight: bold;
+    font-size: 37px;
   }
 
   .setup {
@@ -228,7 +229,7 @@ th, td {
     font-family: Montserrat-Medium;
     color: grey;
     margin: 1% 120% 1% 10%;
-    padding: 0.2% 10% 10% 100%;
+    padding: 5% 10% 10% 100%;
     font-size: 12px;
     min-width: 0%;
   }
